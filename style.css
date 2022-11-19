@@ -1,12 +1,19 @@
+@font-face {
+  font-family: PatuaOne-Regular;
+  src: url(assets/fonts/Patua_One/PatuaOne-Regular.ttf);
+}
 Body {
   margin: 0px;
   padding: 0px;
   background: rgb(126, 122, 122);
   background-image: url(./assets/images/gatoPretoMaior.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 h1 {
-  color: rgb(156, 144, 144);
+  font-family: PatuaOne-Regular;
+  color: black;
+  margin-left: 28%;
 }
 div {
   background-color: rgb(253, 250, 68);
@@ -19,17 +26,64 @@ div {
   border-radius: 20px;
   color: #fff;
 }
+input {
+  width: 100%;
+  padding: 7px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
 button {
   background-color: rgb(156, 144, 144);
   border: none;
   padding: 5px;
-  width: 70%;
+  width: 100%;
   border-radius: 10px;
   color: white;
   font-size: 15px;
+  margin-top: 30px;
 }
 
 button:hover {
   background-color: blueviolet;
   cursor: pointer;
+}
+
+.forgot {
+  color: black;
+  margin-left: 60px;
+  margin-top: 7px;
+  font-size: 16px;
+}
+
+.account {
+  color: black;
+  margin-left: 80px;
+}
+/*mobile first*/
+@media (min-width: 375px) and (max-width:767px)  {
+  Body {
+    background-size: auto;
+  }
+  h1 {
+    margin-left: 70px;
+    font-size: 23px;
+  }
+  div {
+      position: relative;
+      width: 60%;
+      height: 400px;
+      left: 10%;
+      top: 150px;
+      padding: 40px;
+      border-radius: 20px;
+      color: #fff;
+  }
+  .forgot {
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .account {
+    margin-left: 40px;
+  }
 }
