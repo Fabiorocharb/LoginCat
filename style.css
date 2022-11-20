@@ -60,7 +60,7 @@ button:hover {
   margin-left: 80px;
 }
 /*mobile first*/
-@media (min-width: 375px) and (max-width:767px)  {
+@media (min-width: 375px) and (max-width: 767px) {
   Body {
     background-size: auto;
   }
@@ -69,21 +69,42 @@ button:hover {
     font-size: 23px;
   }
   div {
-      position: relative;
-      width: 60%;
-      height: 400px;
-      left: 10%;
-      top: 150px;
-      padding: 40px;
-      border-radius: 20px;
-      color: #fff;
+    position: relative;
+    width: 60%;
+    height: 400px;
+    left: 10%;
+    top: 80px;
+    padding: 40px;
+    border-radius: 20px;
+    color: #fff;
   }
   .forgot {
-    margin-left: 25px;
+    margin-left: 40px;
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 12px;
   }
   .account {
-    margin-left: 40px;
+    margin-left: 58px;
+    font-size: 12px;
   }
+}
+/*IPad and Tablet*/
+@media (min-width: 767px) and (max-width: 1024px) {
+  Body {
+    background-size: auto;
+  }
+  div {
+    width: 35%;
+    left: 25%;
+  }
+  .forgot {
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+  .account {
+    margin-left: 60px;
+  }
+}
+/*Desktop 1920x929*/
+@media (min-width: 951px) and (max-width: 1920px) {
 }
