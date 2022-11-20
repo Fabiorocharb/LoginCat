@@ -5,6 +5,8 @@
 Body {
   margin: 0px;
   padding: 0px;
+  width: 100vw;
+  height: 100vh;
   background: rgb(126, 122, 122);
   background-image: url(./assets/images/gatoPretoMaior.jpg);
   background-repeat: no-repeat;
@@ -60,7 +62,7 @@ button:hover {
   margin-left: 80px;
 }
 /*mobile first*/
-@media (min-width: 375px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 760px) {
   Body {
     background-size: auto;
   }
@@ -91,7 +93,8 @@ button:hover {
 /*IPad and Tablet*/
 @media (min-width: 761px) and (max-width: 1024px) {
   Body {
-    background-size: auto;
+    background-size: contain;
+    background-repeat: repeat;
   }
   div {
     width: 35%;
@@ -106,5 +109,23 @@ button:hover {
   }
 }
 /*Desktop 1920x929*/
-@media (min-width: 951px) and (max-width: 1920px) {
+@media (min-width: 1285px) and (max-width: 1920px) {
+  h1 {
+    margin-left: 35%;
+  }
+  div {
+    position: relative;
+    width: 20%;
+    height: 480px;
+    left: 10%;
+    top: 200px;
+  }
+
+  .forgot {
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+  .account {
+    margin-left: 100px;
+  }
 }
